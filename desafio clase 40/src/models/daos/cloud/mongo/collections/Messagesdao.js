@@ -14,7 +14,7 @@ class MessageMongoDao extends ContainerMongo {
   }
 
   async getAll() {
-    return await this.model.ReadAndPopulate({}, "author");
+    return await this.model.readAndPopulate({}, "author");
   }
 }
 

@@ -13,7 +13,7 @@ class ProductMongoDao extends ContainerMongo {
   }
 
   async getByName(title) {
-    return await this.model.ReadOne({ title });
+    return await this.model.readOne({ title });
   }
 
   async getByPrice(price) {

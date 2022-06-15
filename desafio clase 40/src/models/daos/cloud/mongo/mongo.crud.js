@@ -1,35 +1,33 @@
-const mongoose = require("mongoose");
-
-class CrudMongo {
+class MongoHelpers {
   constructor(model) {
     this.model = model;
     console.log("CLASS: CrudMongo");
   }
 
-  async Create(data) {
+  async create(data) {
     const document = await this.model(data).save();
     return document;
   }
-
-  async ReadAndPopulate(filter, populate) {
+  
+  async readAndPopulate(filter, populate) {
     return await this.model.find(filter, { __v: 0 }).populate(populate);
   }
 
-  async ReadAll(filter) {
+  async readAll(filter) {
     return await this.model.find(filter, { __v: 0 }).lean();
   }
 
-  async ReadOne(filter) {
+  async readOne(filter) {
     return await this.model.findOne(filter, { __v: 0 }).lean();
   }
 
-  async Update(filter, data) {
+  async update(filter, data) {
     return await this.model.updateOne(filter, { $set: data }).lean();
   }
 
-  async Delete(filter) {
+  async delete(filter) {
     return await this.model.deleteOne(filter);
   }
 }
 
-module.exports = CrudMongo;
+module.exports = MongoHelpers;

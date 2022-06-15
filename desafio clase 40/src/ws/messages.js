@@ -9,13 +9,8 @@ const addMenssagesHandlers = async (socket, sockets) => {
   sockets.emit("messages", normalizedMessages(await messagesDao.getAll()));
 
   socket.on("newMessage", async message => {
-    console.log("message.email: ", message.email);
-    const user = await usersDao.getByEmail(message.email);
-    const newMessage = {
-      author: user._id,
-      text: message.text,
-    };
-    await messagesDao.save(new CreateDTO(newMessage));
+    const author = await usersDao.getByEmail(message.email)._id;
+    await messagesDao.save(new CreateDTO({ author, text: message.text }));
     sockets.emit("messages", normalizedMessages(await messagesDao.getAll()));
   });
 };
