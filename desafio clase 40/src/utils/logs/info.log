@@ -1,0 +1,14 @@
+[2022-06-14T16:57:52.951] [INFO] infoFile - { route: '/home', method: '[GET]' }
+[2022-06-14T16:58:01.816] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T17:02:13.521] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T17:41:51.486] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T17:43:24.214] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T17:48:04.491] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T17:50:13.515] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T18:09:07.999] [INFO] infoFile - { route: '/home?', method: '[GET]' }
+[2022-06-14T18:09:08.124] [INFO] infoFile - { route: '/', method: '[GET]' }
+[2022-06-14T18:09:33.993] [INFO] infoFile - { route: '/auth/register', method: '[POST]' }
+[2022-06-14T18:09:44.886] [INFO] infoFile - { route: '/home', method: '[GET]' }
+[2022-06-14T18:14:06.702] [INFO] infoFile - { route: '/home', method: '[GET]' }
+[2022-06-14T18:28:57.124] [INFO] infoFile - { route: '/home', method: '[GET]' }
+[2022-06-14T19:45:18.824] [INFO] infoFile - { route: '/home', method: '[GET]' }

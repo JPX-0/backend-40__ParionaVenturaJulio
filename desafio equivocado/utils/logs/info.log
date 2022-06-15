@@ -1,0 +1,14 @@
+[2022-06-13T16:55:46.776] [INFO] infoFile - { route: '/api/data/product/get?', method: '[GET]' }
+[2022-06-13T16:57:36.290] [INFO] infoFile - {
+  route: '/api/data/product/get?id=62a76ce4bc5ed2a13ac4c153',
+  method: '[GET]'
+}
+[2022-06-13T16:57:50.486] [INFO] infoFile - {
+  route: '/api/data/product/get/62a76ce4bc5ed2a13ac4c153',
+  method: '[GET]'
+}
+[2022-06-13T16:57:57.923] [INFO] infoFile - {
+  route: '/api/data/product/get/62a76ce4bc5ed2a13ac4c15',
+  method: '[GET]'
+}
+[2022-06-13T16:58:49.371] [INFO] infoFile - { route: '/api/data/product/', method: '[GET]' }
